@@ -1,0 +1,1 @@
+(self.webpackChunktop_restaurant_page=self.webpackChunktop_restaurant_page||[]).push([[826],{138:()=>{document.body.appendChild(function(){const e=document.createElement("div");return e.innerText="Test message...",e}())}},e=>{e(e.s=138)}]);
