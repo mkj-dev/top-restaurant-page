@@ -18,9 +18,9 @@ body {
     color: #f1d37e;
 }
 
-#page1,
-#page2,
-#page3 {
+#pageButton1,
+#pageButton2,
+#pageButton3 {
     font-size: 24px;
     margin: 8px;
     padding: 4px 16px;
@@ -29,8 +29,8 @@ body {
     background-color: #1a1d24;
 }
 
-#page1:hover,
-#page2:hover,
-#page3:hover {
+#pageButton1:hover,
+#pageButton2:hover,
+#pageButton3:hover {
     color: #f1d37e;
 }
