@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    max-width: 100%;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1a1d24;
+    font-size: 46px;
+    font-style: italic;
+    text-align: center;
+}
+
+#header h2 {
+    margin: 0;
+    color: #f1d37e;
+}
+
+#page1,
+#page2,
+#page3 {
+    font-size: 24px;
+    margin: 8px;
+    padding: 4px 16px;
+    border: none;
+    color: #fff;
+    background-color: #1a1d24;
+}
+
+#page1:hover,
+#page2:hover,
+#page3:hover {
+    color: #f1d37e;
+}

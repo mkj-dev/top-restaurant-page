@@ -9,13 +9,13 @@ h2.innerText = 'Lorem Ipsum Restaurant'
 
 for (let i = 1; i < 4; i++) {
     const pageBtn = document.createElement('button')
-    pageBtn.setAttribute('id', 'page' + i)
+    pageBtn.setAttribute('id', 'pageButton' + i)
     
-    if (pageBtn.id === 'page1') {
+    if (pageBtn.id === 'pageButton1') {
         pageBtn.innerText = 'Home'
-    } else if (pageBtn.id === 'page2') {
+    } else if (pageBtn.id === 'pageButton2') {
         pageBtn.innerText = 'Menu'
-    } else if (pageBtn.id === 'page3') {
+    } else if (pageBtn.id === 'pageButton3') {
         pageBtn.innerText = 'Contact'
     }
 
