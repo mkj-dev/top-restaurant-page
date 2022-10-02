@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/* Main header */
 #header {
     max-width: 100%;
     height: 100px;
@@ -33,4 +34,20 @@ body {
 #pageButton2:hover,
 #pageButton3:hover {
     color: #f1d37e;
+}
+
+/* Main footer */
+#footer {
+    max-width: 100%;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1a1d24;
+    font-style: italic;
+    text-align: center;
+    display: flex;   
+    justify-content: center;
+}
+
+#footer p { 
+    font-size: 18px;
 }
