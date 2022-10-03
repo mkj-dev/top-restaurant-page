@@ -8,7 +8,7 @@ body {
 
 /* Main header */
 #header {
-    max-height: 280px;
+    height: 280px;
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 #homeSectionBgImg {
-    min-width: 30%;
+    width: 100%;
 }
 
 /* About Us */
@@ -87,4 +87,14 @@ body {
 
 #footer p { 
     font-size: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+    #header {
+        height: auto;
+    }
+    
+    #homeSection {
+        display: none;
+    }
 }
