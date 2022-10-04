@@ -16,7 +16,7 @@ p.innerText = 'Aenean consequat suscipit lorem non rutrum. Nullam consequat ac a
 backgroundImage.src = '../../images/vegetables-set-left-black-slate.jpg'
 h3Gallery.innerText = 'Gallery'
 
-function makeImages() {
+function createImages() {
     for (let i = 0; i < 6; i++) {
         const img = document.createElement('img')
         img.setAttribute('id', 'pic' + i)
@@ -29,4 +29,4 @@ function makeImages() {
 aboutUs.appendChild(h3About), aboutUs.appendChild(p), gallery.appendChild(h3Gallery)
 homeSection.appendChild(backgroundImage, aboutUs, h3Gallery)
 
-export { homeSection, backgroundImage, aboutUs, gallery, h3Gallery, makeImages }
+export { homeSection, backgroundImage, aboutUs, gallery, h3Gallery, createImages }
