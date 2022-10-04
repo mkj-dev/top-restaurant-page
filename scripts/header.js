@@ -5,7 +5,7 @@ header.setAttribute('id', 'header')
 h2.innerText = 'Lorem Ipsum Restaurant'
 header.appendChild(h2)
 
-function makeButtons () {
+function createButtons () {
     for (let i = 1; i < 4; i++) {
         const pageBtn = document.createElement('button')
         pageBtn.setAttribute('id', 'pageButton' + i)
@@ -22,4 +22,4 @@ function makeButtons () {
     }
 }
 
-export {header, h2, makeButtons}
+export {header, h2, createButtons}
