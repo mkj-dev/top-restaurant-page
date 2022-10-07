@@ -34,12 +34,27 @@ function appendContent(button) {
             content.appendChild(homeSection, backgroundImage)
             content.appendChild(aboutUs)
             content.appendChild(gallery)
+            homeSection.style.display = 'block'
+            aboutUs.style.display = 'block'
+            gallery.style.display = 'block'
+            menuSection.style.display = 'none'
+            contactSection.style.display = 'none'
         }
         if (button.id === 'pageButton2') {
             content.appendChild(menuSection)
+            menuSection.style.display = 'block'
+            homeSection.style.display = 'none'
+            aboutUs.style.display = 'none'
+            gallery.style.display = 'none'
+            contactSection.style.display = 'none'
         }
-        if (button.id === 'pageButton2') {
+        if (button.id === 'pageButton3') {
             content.appendChild(contactSection)
+            contactSection.style.display = 'block'
+            homeSection.style.display = 'none'
+            aboutUs.style.display = 'none'
+            gallery.style.display = 'none'
+            menuSection.style.display = 'none'
         }
     })
 }
