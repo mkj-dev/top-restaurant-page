@@ -59,5 +59,4 @@ function appendContent(button) {
     })
 }
 
-
 export { header, h2, createButtons }
