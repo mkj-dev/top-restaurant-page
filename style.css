@@ -8,7 +8,7 @@ body {
 
 /* Main header */
 #header {
-    height: 280px;
+    height: 250px;
     text-align: center;
 }
 
@@ -73,6 +73,16 @@ body {
     width: 250px;
     height: 200px;
     margin: 12px 8px;
+}
+
+/* Menu section */
+#menuSection h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#menuItems {
+    text-align: center;
 }
 
 /* Main footer */
