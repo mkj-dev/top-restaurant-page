@@ -1,6 +1,6 @@
-import { header, h2, createButtons } from "./header.js"
-import { footer } from "./footer.js"
-import { homeSection, backgroundImage, aboutUs, gallery, createImages } from "./home.js"
+import { header, h2, createButtons } from "./scripts/header.js"
+import { footer } from "./scripts/footer.js"
+import { homeSection, backgroundImage, aboutUs, gallery, createImages } from "./scripts/home.js"
 
 const content = document.getElementById('content')
 
