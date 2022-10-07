@@ -85,6 +85,12 @@ body {
     text-align: center;
 }
 
+/* Contact section */
+#contactSection {
+    text-align: center;
+    border: 1px solid #1a1d24;
+}
+
 /* Main footer */
 #footer {
     height: 50px;
