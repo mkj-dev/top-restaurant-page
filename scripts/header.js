@@ -1,15 +1,20 @@
+import { homeSection, backgroundImage, aboutUs, gallery } from "./home.js"
+import { menuSection } from "./menu.js"
+import contactSection from "./contact.js"
+
 const header = document.createElement('header')
 const h2 = document.createElement('h2')
+const content = document.getElementById('content')
 
 header.setAttribute('id', 'header')
 h2.innerText = 'Lorem Ipsum Restaurant'
 header.appendChild(h2)
 
-function createButtons () {
+function createButtons() {
     for (let i = 1; i < 4; i++) {
         const pageBtn = document.createElement('button')
         pageBtn.setAttribute('id', 'pageButton' + i)
-        
+
         if (pageBtn.id === 'pageButton1') {
             pageBtn.innerText = 'Home'
         } else if (pageBtn.id === 'pageButton2') {
@@ -19,7 +24,25 @@ function createButtons () {
         }
 
         header.appendChild(pageBtn)
+        appendContent(pageBtn)
     }
 }
 
-export {header, h2, createButtons}
+function appendContent(button) {
+    button.addEventListener('click', () => {
+        if (button.id === 'pageButton1') {
+            content.appendChild(homeSection, backgroundImage)
+            content.appendChild(aboutUs)
+            content.appendChild(gallery)
+        }
+        if (button.id === 'pageButton2') {
+            content.appendChild(menuSection)
+        }
+        if (button.id === 'pageButton2') {
+            content.appendChild(contactSection)
+        }
+    })
+}
+
+
+export { header, h2, createButtons }
