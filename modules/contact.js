@@ -1,15 +1,18 @@
-const contactSection = document.createElement('div')
-const contactHeading = document.createElement('h2')
-const p = document.createElement('p')
-
+// Contact section
+const contactSection = document.createElement('section')
 contactSection.setAttribute('id', 'contactSection')
 
+// Contact heading
+const contactHeading = document.createElement('h2')
+contactHeading.setAttribute('id', 'contactHeading')
 contactHeading.innerText = 'Contact Us'
-p.innerText = `123 Lorem Street, New York
+
+const para = document.createElement('p')
+
+para.innerText = `123 Lorem Street, New York
                012-345-678
-               lorem@ipsum.com`
+               burgerjoint@ipsum.com`
 
-contactSection.appendChild(contactHeading)
-contactSection.appendChild(p)
+contactSection.append(contactHeading, para)
 
-export default contactSection
+export { contactSection }
