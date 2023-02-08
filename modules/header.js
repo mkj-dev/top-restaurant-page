@@ -1,62 +1,61 @@
-import { homeSection, backgroundImage, aboutUs, gallery } from "./home.js"
+import { homeSection } from "./home.js"
 import { menuSection } from "./menu.js"
-import contactSection from "./contact.js"
+import { contactSection } from "./contact.js"
 
+// Header
 const header = document.createElement('header')
-const h2 = document.createElement('h2')
-const content = document.getElementById('content')
-
 header.setAttribute('id', 'header')
-h2.innerText = 'Lorem Ipsum Restaurant'
-header.appendChild(h2)
 
-function createButtons() {
-    for (let i = 1; i < 4; i++) {
-        const pageBtn = document.createElement('button')
-        pageBtn.setAttribute('id', 'pageButton' + i)
+// Restaurant name
+const restaurantName = document.createElement('h2')
+restaurantName.innerText = 'Burger Joint'
 
-        if (pageBtn.id === 'pageButton1') {
-            pageBtn.innerText = 'Home'
-        } else if (pageBtn.id === 'pageButton2') {
-            pageBtn.innerText = 'Menu'
-        } else if (pageBtn.id === 'pageButton3') {
-            pageBtn.innerText = 'Contact'
-        }
+// Restaurant slogan
+const restaurantSlogan = document.createElement('p')
+restaurantSlogan.innerText = 'Where every bite is a juicy delight!'
 
-        header.appendChild(pageBtn)
-        appendContent(pageBtn)
-    }
-}
+// Home button
+const homeBtn = document.createElement('button')
+homeBtn.setAttribute('id', 'home-btn') 
+homeBtn.innerText = 'Home'
 
-function appendContent(button) {
-    button.addEventListener('click', () => {
-        if (button.id === 'pageButton1') {
-            content.appendChild(homeSection, backgroundImage)
-            content.appendChild(aboutUs)
-            content.appendChild(gallery)
-            homeSection.style.display = 'block'
-            aboutUs.style.display = 'block'
-            gallery.style.display = 'block'
-            menuSection.style.display = 'none'
-            contactSection.style.display = 'none'
-        }
-        if (button.id === 'pageButton2') {
-            content.appendChild(menuSection)
-            menuSection.style.display = 'block'
-            homeSection.style.display = 'none'
-            aboutUs.style.display = 'none'
-            gallery.style.display = 'none'
-            contactSection.style.display = 'none'
-        }
-        if (button.id === 'pageButton3') {
-            content.appendChild(contactSection)
-            contactSection.style.display = 'block'
-            homeSection.style.display = 'none'
-            aboutUs.style.display = 'none'
-            gallery.style.display = 'none'
-            menuSection.style.display = 'none'
-        }
-    })
-}
+homeBtn.addEventListener('click', () => {
+    content.appendChild(homeSection)
+    homeSection.style.display = 'block'
+    menuSection.style.display = 'none'
+    contactSection.style.display = 'none'
+})
 
-export { header, h2, createButtons }
+// Menu button
+const menuBtn = document.createElement('button')
+menuBtn.setAttribute('id', 'menu-btn')
+menuBtn.innerText = 'Menu'
+
+menuBtn.addEventListener('click', () => {
+    content.appendChild(menuSection)
+    menuSection.style.display = 'block'
+    homeSection.style.display = 'none'
+    contactSection.style.display = 'none'
+})
+
+// Contact button
+const contactBtn = document.createElement('button')
+contactBtn.setAttribute('id', 'contact-btn')
+contactBtn.innerText = 'Contact'
+
+contactBtn.addEventListener('click', () => {
+    content.appendChild(contactSection)
+    contactSection.style.display = 'block'
+    homeSection.style.display = 'none'
+    menuSection.style.display = 'none'
+})
+
+header.append(
+    restaurantName,
+    restaurantSlogan,
+    homeBtn,
+    menuBtn,
+    contactBtn
+)
+
+export { header }
