@@ -5,13 +5,12 @@ body {
     max-width: 100%;
     max-height: 100vh;
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     color: #1a1d24;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* MAIN HEADER */
+/* HEADER */
 #header {
     max-height: 100%;
     text-align: center;
@@ -20,25 +19,29 @@ body {
 
 #header h2 {
     font-size: 3rem;
-    margin: 32px 0;
+    margin: 2rem 0;
     color: #ee1414;
 }
 
-#pageButton1,
-#pageButton2,
-#pageButton3 {
-    font-size: 24px;
-    margin: .5em;
+#header p {
+    font-size: 1.5rem;
+} 
+
+#home-btn,
+#menu-btn,
+#contact-btn {
+    font-size: 1.5rem;
     padding: 4px 16px;
     border: none;
     color: #1a1d24;
     background-color: #fff;
 }
 
-#pageButton1:hover,
-#pageButton2:hover,
-#pageButton3:hover {
+#home-btn:hover,
+#menu-btn:hover,
+#contact-btn:hover {
     color: #ee1414;
+    text-decoration: underline;
 }
 
 /* Home section */
