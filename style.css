@@ -46,25 +46,21 @@ body {
 
 /* Home section */
 #homeSection {
-    margin: 24px auto;
+    margin: 1.5rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
-}
-
-#homeSectionBgImg {
-    width: 100%;
 }
 
 /* About Us */
 #aboutUs {
     text-align: center;
-    max-width: 800px;
-    margin: 32px auto;
+    max-width: 768px;
+    margin: 2rem auto;
 }
 
 #aboutUs h3 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 /* Gallery */
@@ -80,8 +76,9 @@ body {
 
 .photo {
     width: 250px;
-    height: 200px;
-    margin: 12px 8px;
+    height: 250px;
+    margin: .5rem;
+    object-fit: cover;
 }
 
 /* Menu section */
