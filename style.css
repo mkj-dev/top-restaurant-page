@@ -1,8 +1,9 @@
 body {
+    max-width: 100%;
+    max-height: 100vh;
     margin: 0;
-    padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #1a1d24;
 }
 
@@ -13,7 +14,7 @@ body {
 }
 
 #header h2 {
-    font-size: 64px;
+    font-size: 3rem;
     margin: 32px 0;
     color: #ee1414;
 }
