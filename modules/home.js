@@ -24,11 +24,16 @@ galleryHeading.innerText = 'Gallery'
 
 // Gallery images
 function createImages() {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 1; i <= 6; i++) {
+        // random number between 1 and 6
+        let min = Math.ceil(1);
+        let max = Math.floor(6);
+        let rand = Math.floor(Math.random() * (max - min + 1) + min);
+        
         const img = document.createElement('img')
         img.setAttribute('id', 'pic' + i)
         img.setAttribute('class', 'photo')
-        img.setAttribute('src', '../../images/appetizing-pasta-with-tomato-sauce-parmesan-plate-closeup.jpg')
+        img.setAttribute('src', `../../images/burger${rand}.jpg`)
         gallery.appendChild(img)
     }
 }
