@@ -47,9 +47,10 @@ body {
 /* HOME SECTON */
 #homeSection {
     margin: 1.5rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+#homeSection h3 {
+    margin-top: 0;
 }
 
 /* ABOUT US */
@@ -95,6 +96,7 @@ body {
 /* MENU */
 #menuHeading {
     font-size: 2.5rem;
+    margin-top: 3.75rem;
     font-family: Lobster, cursive;
     text-align: center;
     color: #ee1414;
@@ -109,6 +111,7 @@ body {
 
 /* CONTACT */
 #contactSection {
+    margin-top: 3.75rem;
     font-family: Lobster, cursive;
     text-align: center;
     margin-bottom: 3rem;
