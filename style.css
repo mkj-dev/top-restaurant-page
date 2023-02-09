@@ -60,7 +60,9 @@ body {
 }
 
 #aboutUs h3 {
+    font-family: 'Lobster', cursive;
     font-size: 2rem;
+    color: #ee1414;
 }
 
 /* GALLERY */
@@ -130,14 +132,4 @@ body {
 #footer a:hover {
     color: #ee1414;
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 480px) {
-    #header {
-        height: auto;
-    }
-    
-    #homeSection {
-        display: none;
-    }
 }
