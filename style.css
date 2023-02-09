@@ -68,12 +68,14 @@ body {
 /* GALLERY */
 #gallery {
     max-width: 1024px;
-    margin: 32px auto;
+    margin: 2rem auto;
     text-align: center;
 }
 
 #gallery h3 {
-    font-size: 32px;
+    font-size: 2rem;
+    color: #ee1414;
+    font-family: 'Lobster', cursive;
 }
 
 .photo {
