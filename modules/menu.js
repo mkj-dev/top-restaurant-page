@@ -23,7 +23,7 @@ const menu = {
 
 for (const burger in menu) {
     const h3 = document.createElement('h3')
-    h3.innerText = `${burger}: $${menu[burger]}`
+    h3.innerText = `${burger}:............$${menu[burger]}`
     menuElements.appendChild(h3)
 }
 
