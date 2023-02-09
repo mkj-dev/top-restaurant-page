@@ -104,8 +104,13 @@ body {
 
 /* CONTACT */
 #contactSection {
+    font-family: Lobster, cursive;
     text-align: center;
-    border: 1px solid #1a1d24;
+    margin-bottom: 3rem;
+}
+
+#contactHeading {
+    color: #ee1414;
 }
 
 /* FOOTER */
